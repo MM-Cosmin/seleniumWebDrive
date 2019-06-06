@@ -43,14 +43,14 @@ public class RegistroOk {
     driver.get("http://loginapphmis2019jjcanada.azurewebsites.net/");
     driver.findElement(By.linkText("Register")).click();
     driver.findElement(By.id("Input_Email")).clear();
-    driver.findElement(By.id("Input_Email")).sendKeys("holac12201239@ual.es");
+    driver.findElement(By.id("Input_Email")).sendKeys("hola154c@ual.es");
     driver.findElement(By.id("Input_Password")).clear();
     driver.findElement(By.id("Input_Password")).sendKeys("ABab12!!");
     driver.findElement(By.id("Input_ConfirmPassword")).clear();
     driver.findElement(By.id("Input_ConfirmPassword")).sendKeys("ABab12!!");
     driver.findElement(By.xpath("//button[@type='submit']")).click();
     // ERROR: Caught exception [unknown command [#]]
-    assertTrue(isElementPresent(By.linkText("Hello holac12201239@ual.es!")));
+    assertTrue(isElementPresent(By.linkText("Hello hola154c@ual.es!")));
     driver.findElement(By.xpath("//form[@id='logoutForm']/ul/li[2]/button")).click();
     assertTrue(isElementPresent(By.linkText("Log in")));
     assertEquals("Log in", driver.findElement(By.linkText("Log in")).getText());

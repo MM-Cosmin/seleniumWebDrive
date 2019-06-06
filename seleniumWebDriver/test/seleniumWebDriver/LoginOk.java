@@ -44,11 +44,11 @@ public class LoginOk {
     driver.findElement(By.linkText("Log in")).click();
     driver.findElement(By.id("Input_Email")).click();
     driver.findElement(By.id("Input_Email")).clear();
-    driver.findElement(By.id("Input_Email")).sendKeys("hola201978@ual.es");
+    driver.findElement(By.id("Input_Email")).sendKeys("holac@ual.es");
     driver.findElement(By.id("Input_Password")).clear();
     driver.findElement(By.id("Input_Password")).sendKeys("ABab12!!");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::button[1]")).click();
-    assertEquals("Hello hola2019@ual.es!", driver.findElement(By.linkText("Hello hola201978@ual.es!")).getText());
+    assertEquals("Hello hola2019@ual.es!", driver.findElement(By.linkText("Hello holac@ual.es!")).getText());
     driver.findElement(By.xpath("//form[@id='logoutForm']/ul/li[2]/button")).click();
     assertTrue(isElementPresent(By.linkText("Log in")));
     assertEquals("Log in", driver.findElement(By.linkText("Log in")).getText());
